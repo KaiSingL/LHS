@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>安心扮蟹</title>
+	<title>安心出街</title>
 	<meta charset="utf-8"/>
 	<link rel="apple-touch-icon" href="images/icon-192x192.png"/>
 	<link rel="icon" href="images/icon.jpg">
@@ -24,7 +24,7 @@
 		document.getElementById('time').innerHTML= now;
 		
 		const venue = localStorage.getItem("venue").substr(14);
-		const decodedMsg = JSON.parse(Buffer.from(venue, 'base64'));
+		var decodedMsg = JSON.parse(Buffer.from(venue, 'base64'));
 		document.getElementById("venue").innerHTML = decodedMsg.nameZh;
 		//var obj = JSON.parse(decodeURIComponent(escape(window.atob(venue))));
 		//document.getElementById("venue").innerHTML = obj.nameZh;

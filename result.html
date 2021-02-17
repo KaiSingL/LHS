@@ -24,8 +24,10 @@
 		document.getElementById('time').innerHTML= now;
 		
 		var venue = localStorage.getItem("venue").substr(14);
-		var obj = JSON.parse(decodeURIComponent(escape(window.atob(venue))));
-		document.getElementById("venue").innerHTML = obj.nameZh;
+		const decodedMsg = JSON.parse(Buffer.from(venue, 'base64').toString());
+		document.getElementById("venue").innerHTML = decodeMsg;
+		//var obj = JSON.parse(decodeURIComponent(escape(window.atob(venue))));
+		//document.getElementById("venue").innerHTML = obj.nameZh;
 	</script>
 </body>
 </html>

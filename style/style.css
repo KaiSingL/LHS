@@ -37,7 +37,8 @@ body {
 	border-radius: 50px;
 	border: hidden;
 	height: 50px;
-	font-size: 25px
+	font-size: 25px;
+	box-shadow:1px 2px 4px #000000;
 }
 
 .button:active {
@@ -47,7 +48,7 @@ body {
 .button2 {
 	position: absolute;
 	margin-left: 10%;
-	margin-right:10%;
+	width: 80%;
 	bottom: 100px;
 	background-color: #FFDA31;
 	border-radius: 50px;

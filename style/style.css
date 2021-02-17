@@ -47,13 +47,14 @@ body {
 .button2 {
 	position: absolute;
 	margin-left: 10%;
+	margin-right:10%
 	bottom: 100px;
 	background-color: #FFDA31;
 	border-radius: 50px;
 	border: hidden;
 	height: 50px;
 	font-size: 25px;
-	box-shadow:2px 2px 4px #000000;
+	box-shadow:1px 2px 4px #000000;
 }
 
 .button2:active {
@@ -77,4 +78,5 @@ body {
 
 .big-yellow {
 	color: #FFDA31;
+	font-size: 30px;
 }	

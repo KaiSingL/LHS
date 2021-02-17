@@ -46,13 +46,14 @@ body {
 
 .button2 {
 	position: absolute;
-	margin-left: 25%;
+	margin-left: 10%;
 	bottom: 100px;
 	background-color: #FFDA31;
 	border-radius: 50px;
 	border: hidden;
 	height: 50px;
-	font-size: 25px
+	font-size: 25px;
+	box-shadow:2px 2px 4px #000000
 }
 
 .button2:active {

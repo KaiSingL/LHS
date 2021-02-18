@@ -14,6 +14,16 @@
 <body>
 	<img src="images/icon.jpg" class="center home">
 	<button class="center button" onClick="window.location.href='scan.html'">按此掃瞄</button>
+	<button class="center button" onClick=setlocation()>Test</button>
 	<script src="./index.js" type="module"></script>
+	<script>
+		function setlocation(){
+			var venue2 = prompt("輸入場地名稱");
+			if (venue2 != null){
+				venue2 => {
+					localStorage.setItem("venue2",venue2);
+					window.location.href = "result.html";
+				}
+	</script>
 </body>
 </html>

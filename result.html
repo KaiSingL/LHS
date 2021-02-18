@@ -24,9 +24,11 @@
 		var now = moment(new Date()).format("YYYY-MM-DD HH:mm");
 		document.getElementById('time').innerHTML= now;
 		
-		const venue = localStorage.getItem("venue").substr(14);
-		var decodedMsg = JSON.parse(Buffer.from(venue, 'base64').toString);
-		document.getElementById("venue").innerHTML = decodedMsg;
+		var venue2 = localStorage.getItem("venue2");
+		document.getElementById("venue").innerHTML = venue2;
+		//const venue = localStorage.getItem("venue").substr(14);
+		//var decodedMsg = JSON.parse(Buffer.from(venue, 'base64').toString);
+		//document.getElementById("venue").innerHTML = decodedMsg;
 		//var obj = JSON.parse(decodeURIComponent(escape(window.atob(venue))));
 		//document.getElementById("venue").innerHTML = obj.nameZh;
 	</script>
